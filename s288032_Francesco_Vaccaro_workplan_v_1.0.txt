@@ -1,0 +1,119 @@
+Version 1.0
+
+
+
+# Format Preserving Encryption for databases
+
+
+
+Francesco Vaccaro
+
+E-mail : s288032@studenti.polito.it
+
+Phone : 3283642804
+
+Tutor : Andrea Atzeni
+
+
+
+
+# Scenario
+
+
+La migrazione al Cloud è un processo che sta coinvolgendo sempre più aziende pubbliche e private. 
+
+La cifratura è un punto chiave per proteggere i dati che passano ad un ambiente Cloud. Non bisogna tuttavia trascurare i problemi di performance legati alla cifratura e quelli di compatibilità con applicazioni pensate per operare con dati in chiaro.
+
+Il Format Preserving Encryption (FPE) permette di cifrare dati in modo che l'output (il testo cifrato) abbia lo stesso formato dell'input (il testo in chiaro).
+
+Le tecniche di FPE aiutano ad evitare cambiamenti dispendiosi e radicali delle applicazioni, ma d'altra parte devono garantire un certo grado di sicurezza. 
+
+
+# Obiettivi
+
+
+
+La tesi ha come obiettivo lo studio e l'analisi delle varie tecniche di FPE, in particolare delle soluzioni adottate dalle aziende leader nel settore dei servizi Cloud.
+
+Le modalità di FPE approvate dal NIST verranno confrontate con le modalità classiche di cifratura, al fine di verificare la resistenza e l'affidabilità dell'utilizzo del FPE. 
+
+In seguito si procederà all'implementazione di un proof-of-concept di un SDK per cifrare e decifrare dati in un database relazionale utilizzando tecniche di FPE.
+
+Infine tale implementazione verrà confrontata in termini di performance con un'applicazione classica per la gestione di database.  
+
+
+
+# Workplan
+
+1. Analisi e studio delle tecniche di FPE
+
+
+	- Funzionamento
+	
+	- Utilizzo
+
+	- Diffusione
+	
+	- Problemi
+
+
+
+2. Confronto tra modalità di cifratura FPE e modalità classiche di cifratura
+
+
+	- Vantaggi
+
+	- Svantaggi
+
+	- Possibili attacchi 
+
+
+
+3. Analisi e studio delle soluzioni adottate dai leader nel settore di servizi Cloud
+
+
+
+4. Sviluppo di una SDK utilizzando FPE (FPE-PoC)
+
+	
+	- Design
+
+	- Implementazione
+
+	- Testing
+
+
+
+5. Confronto tra FPE-PoC e applicazione classica per database
+
+
+	- Performance
+
+	- Vantaggi
+
+	- Svantaggi
+
+
+
+6. Analisi finale
+	
+
+	- Risultati
+
+	- Possibili problemi
+
+	- Possibile utilizzo
+
+	- Possibili estensioni e miglioramenti
+
+	- Conclusioni
+
+  
+# Status
+
+
+Non iniziate : 4,5,6
+
+Iniziate : 1,2,3
+
+Revisione : -
