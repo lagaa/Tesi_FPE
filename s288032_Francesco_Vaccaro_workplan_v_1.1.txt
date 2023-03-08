@@ -1,0 +1,120 @@
+Version 1.0
+
+
+
+# Format Preserving Encryption for databases
+
+
+
+Francesco Vaccaro
+
+E-mail : s288032@studenti.polito.it
+
+Phone : 3283642804
+
+Tutor : Andrea Atzeni
+
+
+
+
+# Scenario
+
+
+La migrazione al Cloud è un processo che sta coinvolgendo sempre più aziende pubbliche e private. 
+
+La cifratura è un punto chiave per proteggere i dati che passano ad un ambiente Cloud. Non bisogna tuttavia trascurare i problemi di performance legati alla cifratura e quelli di compatibilità con applicazioni pensate per operare con dati in chiaro.
+
+Il Format Preserving Encryption (FPE) permette di cifrare dati in modo che l'output (il testo cifrato) abbia lo stesso formato dell'input (il testo in chiaro).
+
+Le tecniche di FPE aiutano ad evitare cambiamenti dispendiosi e radicali delle applicazioni, ma d'altra parte devono garantire un certo grado di sicurezza agli attacchi; infatti, se da un lato le tecniche di FPE hanno come vantaggio il mantenimento del formato rispetto al plaintext, d'altra parte c'è bisogno che queste tecniche siano effettivamente sicure rispetto ad una normale "AES mode". 
+A tal riguardo, gli esempi di maggiore rilevanza sono la modalità FF2, inzialmente inclusa nella Draft 800-38G del NIST e successivamente rimossa perché non raggiungeva 128 bit di resistenza e la modalità FF3, pubblicata nella Draft 800-38G, che è stata attaccata ed ha portato alla definizione di una sua revisione chiamata FF3-1.
+
+
+# Obiettivi
+
+
+
+La tesi ha come obiettivo lo studio e l'analisi delle varie tecniche di FPE, in particolare delle soluzioni adottate dalle aziende leader nel settore dei servizi Cloud.
+
+Le modalità di FPE approvate dal NIST verranno confrontate con le modalità classiche di cifratura, al fine di verificare la resistenza e l'affidabilità dell'utilizzo del FPE. 
+
+In seguito si procederà all'implementazione di un proof-of-concept di un SDK per cifrare e decifrare dati in un database relazionale utilizzando tecniche di FPE.
+
+Infine tale implementazione verrà confrontata in termini di performance con un'applicazione classica per la gestione di database.  
+
+
+
+# Workplan
+
+1. Analisi e studio delle tecniche di FPE
+
+
+	- Funzionamento
+	
+	- Utilizzo
+
+	- Diffusione
+	
+	- Problemi
+
+
+
+2. Confronto tra modalità di cifratura FPE e modalità classiche di cifratura
+
+
+	- Vantaggi
+
+	- Svantaggi
+
+	- Possibili attacchi 
+
+
+
+3. Analisi e studio delle soluzioni adottate dai leader nel settore di servizi Cloud
+
+
+
+4. Sviluppo di una SDK utilizzando FPE (FPE-PoC)
+
+	
+	- Design
+
+	- Implementazione
+
+	- Testing
+
+
+
+5. Confronto tra FPE-PoC e applicazione classica per database
+
+
+	- Performance
+
+	- Vantaggi
+
+	- Svantaggi
+
+
+
+6. Analisi finale
+	
+
+	- Risultati
+
+	- Possibili problemi
+
+	- Possibile utilizzo
+
+	- Possibili estensioni e miglioramenti
+
+	- Conclusioni
+
+  
+# Status
+
+
+Non iniziate : 4,5,6
+
+Iniziate : 1,2,3
+
+Revisione : -
