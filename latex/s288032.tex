@@ -1,0 +1,104 @@
+% !TEX encoding = IsoLatin
+
+% La riga soprastante serve per configurare gli editor TeXShop, TeXWorks
+% e TeXstudio per gestire questo file con la codifica IsoLatin o Latin 1
+% o ISO 8859-1.
+
+% per commentare una riga mettere % al suo inizio
+% per s-commentare una riga (ossia attivarla) togliere il % al suo inizio
+%
+\documentclass[pdfa% formato PDF/A, obbligatorio per l'archiviazione delle tesi di Polito
+,cucitura%lascia margine per la rilegatura
+%,twoside% per stampa fronte-retro (fortemente consigliato per tesi voluminose, opzionale per le altre)
+%,12pt% font più grande (12pt) rispetto a quello normalmente usato (11pt)
+]{toptesi}
+%
+\usepackage{hyperref}
+\hypersetup{%
+    pdfpagemode={UseOutlines},
+    bookmarksopen,
+    pdfstartview={FitH},
+    colorlinks,
+    linkcolor={blue},
+    citecolor={red},
+    urlcolor={blue}
+  }
+
+
+\usepackage[latin1]{inputenc}% IMPORTANTE! usare codifica ISO-8859-1 per le lettere accentate
+
+\input{commands.tex}
+
+\begin{document}
+
+\ateneo{Politecnico di Torino}
+
+\titolo{Format Preserving Encryption for databases}
+
+\corsodilaurea{Ingegneria Informatica}
+
+\candidato{Francesco \textsc{Vaccaro}}
+
+
+\relatore{prof.\ Antonio Lioy}
+\secondorelatore{prof.\ Andrea Atzeni}
+
+\tutoreaziendale{ing.\ Marco Mangiulli, ing.\ Luca Castello}
+
+
+\sedutadilaurea{\textsc{mese} 20**}
+
+\logosede{logopolito}
+
+
+\errorcontextlines=9
+
+\frontespizio
+\paginavuota
+\newpage
+%per sfruttare meglio lo spazio nella pagina
+\advance\voffset -5mm
+\advance\textheight 30mm
+
+
+% opzionale, solo se si vuole dedicare la tesi a delle persone care
+\begin{dedica}
+A mio padre
+
+\textdagger\ A mio nonno Pino
+\end{dedica}
+
+\sommario
+
+Inserire qui un breve sommario della tesi.
+
+\ringraziamenti
+
+Opzionali, solo nel caso si sia ricevuto un aiuto speciale e particolarmente rilevante.
+
+
+\indici
+
+\mainmatter
+
+\chapter{State of the art}
+
+\input{stateoftheart.tex}
+
+\chapter{Proof of concept}
+
+\input{pof.tex}
+
+\chapter{Risultati}
+
+\chapter{Conclusioni}
+
+% bibliografia scritta "a mano"
+\input{biblio.tex}
+
+% se la bibliografia è stata scritta (usando Bibtex) nel file biblio.bib allora commentare la riga precedente e scommentare le due righe seguenti
+%\bibliographystyle{torsec}
+%\bibliography{biblio}
+
+
+\end{document}
