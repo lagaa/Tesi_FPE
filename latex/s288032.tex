@@ -14,6 +14,7 @@
 ]{toptesi}
 %
 \usepackage{hyperref}
+\usepackage{comment}
 \hypersetup{%
     pdfpagemode={UseOutlines},
     bookmarksopen,
@@ -29,7 +30,10 @@
 
 \input{commands.tex}
 
+
+
 \begin{document}
+\selectlanguage{english}
 
 \ateneo{Politecnico di Torino}
 
@@ -70,7 +74,9 @@ A mio padre
 
 \sommario
 
-Inserire qui un breve sommario della tesi.
+Inserire qui un breve sommario della tesi. (INSERITO QUELLO DELLA TRACCIA)
+
+Companies migration to the cloud implies protection of their sensitive and private data. Encryption is the key tool for business's confidential data protection against cyber security threats. However, storing the data in an encrypted format requires to address critical issues: performance, format and ordering of data, protection of encryption keys. Format-preserving encryption (FPE) allows to encrypt the data in such a way that the output (the ciphertext) is in the same format as the input (the plaintext).
 
 \ringraziamenti
 
@@ -82,11 +88,12 @@ Opzionali, solo nel caso si sia ricevuto un aiuto speciale e particolarmente ril
 \mainmatter
 
 \chapter{State of the art}
-
 \input{stateoftheart.tex}
 
-\chapter{Proof of concept}
+\chapter{Analysis of the approved FPE mode}
+\input{analysis.tex}
 
+\chapter{Proof of concept}
 \input{pof.tex}
 
 \chapter{Risultati}
